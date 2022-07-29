@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(109, 49, 49);
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+}
