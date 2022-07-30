@@ -61,8 +61,6 @@ app.post("/failure", (req, res) => {
 
 });
 
-// const APIKEY = "9d055fdc4b428f29198bada2a50864a5-us14";
-// 54df4dd66c
 
 
 app.listen(process.env.PORT || 3000, () => {
