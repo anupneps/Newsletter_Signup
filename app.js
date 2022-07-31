@@ -1,9 +1,10 @@
-require('dotenv).config();
+require('dotenv').config();
 
 const express = require("express");
 const bodyParser = require("body-parser");
 const https = require("https");
 const { response } = require("express");
+const { Module } = require('module');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -35,7 +36,7 @@ app.post("/", (req, res) => {
 
     const options = {
         method: "POST",
-        auth: process.env.APIKEY
+        auth: process.env.API_KEY
     }
 
 
@@ -62,7 +63,6 @@ app.post("/failure", (req, res) => {
     res.redirect("/");
 
 });
-
 
 
 app.listen(process.env.PORT || 3000, () => {
